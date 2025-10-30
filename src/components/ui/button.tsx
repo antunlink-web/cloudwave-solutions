@@ -9,13 +9,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:shadow-[0_0_40px_hsl(var(--primary-glow)/0.6)] transition-all duration-300",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        outline: "border-2 border-primary/50 glass hover:border-primary hover:shadow-[0_0_30px_hsl(var(--primary)/0.4)]",
+        secondary: "glass border border-border hover:border-primary/50 hover:shadow-[0_0_20px_hsl(var(--primary)/0.2)]",
+        ghost: "hover:glass",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:shadow-[0_0_30px_hsl(var(--primary-glow)/0.5)] transition-all duration-300 hover:scale-105",
+        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[0_0_60px_hsl(var(--primary-glow)/0.8),0_0_100px_hsl(var(--accent)/0.4)] transition-all duration-300 hover:scale-105 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700",
       },
       size: {
         default: "h-10 px-4 py-2",

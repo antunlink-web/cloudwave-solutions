@@ -24,8 +24,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-secondary/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 sm:py-32 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Get In Touch
@@ -36,7 +37,7 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <Card className="border-border bg-card">
+          <Card className="glass border-primary/30 hover:border-primary/50 hover:shadow-[0_0_40px_hsl(var(--primary)/0.3)] transition-all">
             <CardHeader>
               <CardTitle>Send us a message</CardTitle>
               <CardDescription>
@@ -79,10 +80,10 @@ const Contact = () => {
           </Card>
 
           <div className="space-y-6">
-            <Card className="border-border bg-card">
+            <Card className="glass border-primary/20 hover:border-primary/40 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all group">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-all">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -93,10 +94,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-border bg-card">
+            <Card className="glass border-primary/20 hover:border-primary/40 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all group">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-all">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -107,10 +108,10 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-border bg-card">
+            <Card className="glass border-primary/20 hover:border-primary/40 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all group">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-all">
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>

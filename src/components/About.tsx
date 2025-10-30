@@ -36,27 +36,27 @@ const About = () => {
             </div>
           </div>
           
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl transform rotate-3"></div>
-            <div className="relative bg-card rounded-2xl p-8 shadow-[0_0_50px_hsl(var(--primary)/0.1)] border border-border">
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl transform rotate-3 blur-xl group-hover:blur-2xl transition-all"></div>
+            <div className="relative glass rounded-2xl p-8 shadow-[0_0_60px_hsl(var(--primary)/0.3),0_0_100px_hsl(var(--accent)/0.2)] border-2 border-primary/30 hover:border-primary/50 transition-all">
               <div className="space-y-6">
-                <div>
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
+                <div className="group/stat">
+                  <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]">
                     500+
                   </div>
-                  <div className="text-muted-foreground">Projects Completed</div>
+                  <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Projects Completed</div>
                 </div>
-                <div>
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
+                <div className="group/stat">
+                  <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]" style={{ animationDelay: '1s' }}>
                     98%
                   </div>
-                  <div className="text-muted-foreground">Client Satisfaction</div>
+                  <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Client Satisfaction</div>
                 </div>
-                <div>
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
+                <div className="group/stat">
+                  <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]" style={{ animationDelay: '2s' }}>
                     50+
                   </div>
-                  <div className="text-muted-foreground">Team Members</div>
+                  <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Team Members</div>
                 </div>
               </div>
             </div>
