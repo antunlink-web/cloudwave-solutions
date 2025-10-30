@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import officeImage from "@/assets/office-workspace.jpg";
 
 const benefits = [
   "Expert team with 10+ years of experience",
@@ -36,27 +37,43 @@ const About = () => {
             </div>
           </div>
           
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl transform rotate-3 blur-xl group-hover:blur-2xl transition-all"></div>
-            <div className="relative glass rounded-2xl p-8 shadow-[0_0_60px_hsl(var(--primary)/0.3),0_0_100px_hsl(var(--accent)/0.2)] border-2 border-primary/30 hover:border-primary/50 transition-all">
-              <div className="space-y-6">
-                <div className="group/stat">
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]">
-                    500+
+          <div className="space-y-8">
+            {/* Office Image */}
+            <div className="relative group overflow-hidden rounded-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
+              <div className="relative">
+                <img 
+                  src={officeImage} 
+                  alt="Modern futuristic office workspace with holographic displays" 
+                  className="w-full h-64 lg:h-80 object-cover rounded-2xl border-2 border-primary/30 group-hover:border-primary/50 transition-all shadow-[0_0_60px_hsl(var(--primary)/0.3)]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+
+            {/* Stats Card */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-2xl transform rotate-3 blur-xl group-hover:blur-2xl transition-all"></div>
+              <div className="relative glass rounded-2xl p-8 shadow-[0_0_60px_hsl(var(--primary)/0.3),0_0_100px_hsl(var(--accent)/0.2)] border-2 border-primary/30 hover:border-primary/50 transition-all">
+                <div className="space-y-6">
+                  <div className="group/stat">
+                    <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]">
+                      500+
+                    </div>
+                    <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Projects Completed</div>
                   </div>
-                  <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Projects Completed</div>
-                </div>
-                <div className="group/stat">
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]" style={{ animationDelay: '1s' }}>
-                    98%
+                  <div className="group/stat">
+                    <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]" style={{ animationDelay: '1s' }}>
+                      98%
+                    </div>
+                    <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Client Satisfaction</div>
                   </div>
-                  <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Client Satisfaction</div>
-                </div>
-                <div className="group/stat">
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]" style={{ animationDelay: '2s' }}>
-                    50+
+                  <div className="group/stat">
+                    <div className="text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-2 animate-gradient drop-shadow-[0_0_20px_hsl(var(--primary)/0.5)]" style={{ animationDelay: '2s' }}>
+                      50+
+                    </div>
+                    <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Team Members</div>
                   </div>
-                  <div className="text-muted-foreground group-hover/stat:text-foreground transition-colors">Team Members</div>
                 </div>
               </div>
             </div>

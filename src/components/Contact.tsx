@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import techPattern from "@/assets/tech-pattern.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -24,8 +25,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 sm:py-32 relative">
+    <section id="contact" className="py-20 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background"></div>
+      <div className="absolute inset-0 opacity-5">
+        <img src={techPattern} alt="" className="w-full h-full object-cover" />
+      </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
