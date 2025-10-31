@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Smartphone, Cloud, Laptop, Database } from "lucide-react";
+import { Code, Smartphone, Cloud, Laptop, Database, Brain } from "lucide-react";
 import techPattern from "@/assets/tech-pattern.jpg";
 import cloudImage from "@/assets/cloud-computing.jpg";
 import mobileImage from "@/assets/mobile-dev.jpg";
@@ -29,6 +29,11 @@ const services = [
     icon: Database,
     title: "CRM Systems",
     description: "Powerful customer relationship management tools to boost sales and customer satisfaction.",
+  },
+  {
+    icon: Brain,
+    title: "AI & Machine Learning",
+    description: "Intelligent automation and data-driven insights powered by artificial intelligence and machine learning.",
   },
 ];
 
