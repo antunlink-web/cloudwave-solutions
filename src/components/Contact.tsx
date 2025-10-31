@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">contact@apco360.com</p>
+                    <p className="text-muted-foreground">apco360@apco360.lv</p>
                   </div>
                 </div>
               </CardContent>
@@ -106,7 +106,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+371 67679991</p>
                   </div>
                 </div>
               </CardContent>
@@ -121,8 +121,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Office</h3>
                     <p className="text-muted-foreground">
-                      123 Tech Street, Silicon Valley<br />
-                      CA 94025, United States
+                      Katoļu iela 9 - 113<br />
+                      Rīga, LV-1003, Latvia
                     </p>
                   </div>
                 </div>
