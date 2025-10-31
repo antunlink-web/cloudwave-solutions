@@ -19,7 +19,7 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               Why Choose{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                TechSolutions
+                APCO360
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
