@@ -1,16 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -36,6 +49,15 @@ const Navbar = () => {
               className="text-foreground hover:text-primary transition-colors"
             >
               About
+            </button>
+            <button
+              onClick={() => {
+                navigate("/case-studies");
+                setIsMenuOpen(false);
+              }}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Case Studies
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -71,6 +93,15 @@ const Navbar = () => {
               className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
             >
               About
+            </button>
+            <button
+              onClick={() => {
+                navigate("/case-studies");
+                setIsMenuOpen(false);
+              }}
+              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+            >
+              Case Studies
             </button>
             <button
               onClick={() => scrollToSection("contact")}
