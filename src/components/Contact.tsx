@@ -24,8 +24,8 @@ const Contact = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          access_key: "YOUR_ACCESS_KEY_HERE", // Get free key at web3forms.com
+        body: JSON.str
+          access_key: "7a6fbce5-f71b-4f52-a58e-12bcbbd3a492", // Get free key at web3forms.com
           name: formData.name,
           email: formData.email,
           message: formData.message,
